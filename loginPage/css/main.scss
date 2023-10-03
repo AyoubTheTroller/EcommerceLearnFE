@@ -280,15 +280,14 @@ p {
 		cursor: pointer;
 		background: transparent;
 		width: 10em;
-		&:focus {
-			color: $color_6;
-			background-color: $background-color_4;
-		}
 	}
-	.login-btn {
+	.navBtn.login-btn,
+	.navBtn.signup-btn {
 		color: $color_5;
 	}
-	.signup-btn {
-		color: $color_5;
+	.navBtn.login-btn.selected,
+	.navBtn.signup-btn.selected {
+		color: $color_6;
+		background-color: $background-color_4;
 	}
 }

@@ -287,15 +287,14 @@ p {
     background: transparent;
     width: 10em;
   }
-  .navBtn:focus {
+  .navBtn.login-btn,
+  .navBtn.signup-btn {
+    color: white;
+  }
+  .navBtn.login-btn.selected,
+  .navBtn.signup-btn.selected {
     color: black;
     background-color: white;
-  }
-  .login-btn {
-    color: white;
-  }
-  .signup-btn {
-    color: white;
   }
 }
 
