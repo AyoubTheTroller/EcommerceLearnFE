@@ -1,0 +1,292 @@
+$color_1: var(--clr-primary-2);
+$color_2: var(--clr-input-primary-1);
+$color_3: var(--clr-primary-1);
+$color_4: var(--clr-light-1);
+$color_5: white;
+$color_6: black;
+$font-family_1: var(--ff-primary);
+$background-color_1: var(--clr-light-1);
+$background-color_2: var(--clr-primary-2);
+$background-color_3: unset;
+$background-color_4: white;
+
+$gradient-grey: #D3D3D3;
+$gradient-lightgrey: #F7F7F7;
+
+/*Font Rules
+    font-family: 'Times New Roman', Times, serif
+    font-family: 'Young Serif', serif;
+*/
+/* Components in this form:
+            - Logo
+            - Login text field -> Color #FF6067
+            - Email input field -> Color #8DA5B0
+            - Password input field -> Color #8DA5B0
+            - Forgot password Button - > Text Color #FE758B
+            - Login Button -> , Button Color #FF6067, Text Color #FFF
+*/
+/*For setting border and padding as total width and height*/
+/*ELEMENTS*/
+/*CLASSES*/
+/*FORM LOGIN*/
+/*OrLoginWith*/
+/*Login or Signin*/
+/*LoginPage*/
+/*Responsiveness*/
+
+:root {
+	--clr-primary-1: #FE758B;
+	--clr-primary-2: #FF6067;
+	--clr-input-primary-1: #8DA5B0;
+	--clr-light-1: #FFF;
+	--clr-gradient-grey: #D3D3D3;
+	--clr-gradient-lightgrey: #F7F7F7;
+	--ff-primary: 'Young Serif', serif;
+}
+* {
+	box-sizing: border-box;
+	&::before {
+		box-sizing: border-box;
+	}
+	&::after {
+		box-sizing: border-box;
+	}
+}
+body {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+img {
+	display: block;
+}
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	color: $color_1;
+	font-weight: bolder;
+	font-size: 2.5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	width: 100%;
+	input {
+		color: $color_2;
+		&::placeholder {
+			color: $color_2;
+		}
+	}
+}
+.logoContainer {
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	flex-direction: column;
+	justify-content: center;
+}
+p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.input-container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	border-bottom: 0.1rem solid var(--clr-input-primary-1);
+	width: 100%;
+	input {
+		border: none;
+		padding: 2rem 0;
+		font-size: 1.8rem;
+		outline: none;
+		margin-left: 0.9rem;
+	}
+}
+.buttonsContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	justify-content: space-between;
+	* {
+		cursor: pointer;
+		border: none;
+	}
+	#forgot {
+		color: $color_3;
+		background-color: $background-color_1;
+		font-size: x-large;
+	}
+	#login {
+		color: $color_4;
+		background-color: $background-color_2;
+		border-radius: 40px;
+		padding: 1rem 2.5rem;
+		font-size: large;
+		font-weight: bold;
+	}
+}
+.orLoginWithContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(180deg, $gradient-grey 0%, $gradient-lightgrey 45%, white);
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	width: 100%;
+	p {
+		color: $color_2;
+		font-size: x-large;
+		font-weight: bold;
+		white-space: nowrap;
+		padding-right: 2rem;
+	}
+	img {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+.googleLoginContainer {
+	display: flex;
+	gap: 0.5rem;
+	button {
+		cursor: pointer;
+		border: none;
+		background-color: $background-color_3;
+		color: $color_2;
+		font-size: x-large;
+	}
+}
+.facebookLoginContainer {
+	display: flex;
+	gap: 0.5rem;
+	button {
+		cursor: pointer;
+		border: none;
+		background-color: $background-color_3;
+		color: $color_2;
+		font-size: x-large;
+	}
+}
+.login-signin-container {
+	background-image: url('../data/15.jpg');
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.split {
+	margin-top: 30%;
+	margin-bottom: 50%;
+	margin-left: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.navBtn {
+	white-space: nowrap;
+	border: none;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	background: transparent;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	&:focus {
+		color: $color_6;
+		background-color: $background-color_4;
+	}
+}
+.login-btn {
+	color: $color_5;
+}
+.signup-btn {
+	color: $color_5;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+.rightContainer {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	>.formContainer {
+		height: 90%;
+	}
+	>.orLoginWithContainer {
+		height: 10%;
+	}
+}
+.leftContainer {
+	width: 30%;
+	display: flex;
+}
+@media only screen and (max-width: 1000px) {
+	.container {
+		flex-direction: column;
+		height: 100vh;
+		width: 100vw;
+		>* {
+			border: none;
+			flex-basis: auto;
+		}
+	}
+	.leftContainer {
+		width: 100%;
+		order: 0;
+		height: 5%;
+	}
+	.rightContainer {
+		width: 100%;
+		order: 1;
+		height: 95%;
+	}
+	.login-signin-container {
+		justify-content: flex-end;
+	}
+	.split {
+		margin-inline: auto;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+	.navBtn {
+		white-space: nowrap;
+		border: none;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		font-size: 25px;
+		font-weight: bold;
+		cursor: pointer;
+		background: transparent;
+		width: 10em;
+		&:focus {
+			color: $color_6;
+			background-color: $background-color_4;
+		}
+	}
+	.login-btn {
+		color: $color_5;
+	}
+	.signup-btn {
+		color: $color_5;
+	}
+}
