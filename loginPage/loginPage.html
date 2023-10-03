@@ -11,13 +11,13 @@
             <div class="leftContainer">
                 <section class="login-signin-container">
                     <div class="split">
-                        <button class="navBtn login-btn" tabindex="0">LOGIN</button>
-                        <button class="navBtn signup-btn" tabindex="0">SIGN IN</button>
+                        <button class="navBtn login-btn selected" data-action="showLogin">LOGIN</button>
+                        <button class="navBtn signup-btn" data-action="showSignup">SIGN UP</button>
                     </div>
                 </section>
             </div>
             <div class="rightContainer">
-                <section class="formContainer">
+                <section class="formContainer loginForm" id="loginForm">
                     <div class="logoContainer">
                             <img src="data/logo.png" alt="Logo">
                             <p>LOGIN</p>
@@ -37,6 +37,31 @@
                         <button id="login">LOGIN</button>
                     </div>
                 </section>
+                <section class="formContainer signupForm" id="signupForm">
+                    <div class="logoContainer">
+                            <img src="data/logo.png" alt="Logo">
+                            <p>SIGNUP</p>
+                    </div>
+                    <form action="">
+                            <div class="input-container input-email-container">
+                                <img src="/loginPage/data/emailIcon.jpg" alt="EmailIcon">
+                                <input type="text" name="Email" placeholder="Email">
+                            </div>
+                            <div class="input-container input-password-container">
+                                <img src="/loginPage/data/passwordIcon.jpg" alt="PasswordIcon">
+                                <input type="password" name="Password" placeholder="Password">
+                            </div>
+                            <div class="input-container input-password-container">
+                                <img src="/loginPage/data/passwordIcon.jpg" alt="PasswordIcon">
+                                <input type="password" name="Password" placeholder="Repeat Password">
+                            </div>
+                    </form>
+        
+                    <div class="buttonsContainer">
+                        <button id="forgot">Troubles signin up?</button>
+                        <button id="login">SIGN UP</button>
+                    </div>
+                </section>
                 <section class="orLoginWithContainer">
                     <div>
                         <p>Or Login with</p>
@@ -54,4 +79,6 @@
         </div>
         
     </body>
+
+    <script src="/loginPage/dynamic.js"></script>
 </html>

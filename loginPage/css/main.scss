@@ -84,6 +84,9 @@ html {
 		}
 	}
 }
+.signupForm {
+	display: none;
+}
 .logoContainer {
 	img {
 		display: block;
@@ -205,16 +208,15 @@ p {
 	background: transparent;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	&:focus {
-		color: $color_6;
-		background-color: $background-color_4;
-	}
 }
-.login-btn {
-	color: $color_5;
+.navBtn.login-btn,
+.navBtn.signup-btn {
+    color: $color_5;
 }
-.signup-btn {
-	color: $color_5;
+.navBtn.login-btn.selected,
+.navBtn.signup-btn.selected {
+    color: $color_6;
+    background-color: $background-color_4;
 }
 .container {
 	display: flex;

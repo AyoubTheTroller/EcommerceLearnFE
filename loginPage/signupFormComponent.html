@@ -1,0 +1,45 @@
+<!-- Components in this form:
+            - Logo
+            - Login text field -> Color #FF6067
+            - Email input field -> Color #91A4B1
+            - Password input field -> Color #91A4B1
+            - Forgot password Button - > Text Color #FE758B
+            - Login Button -> , Button Color #FF6067, Text Color #FFF
+-->
+<html>
+    <head>
+        <title>SignUpForm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Pixelify+Sans:wght@500&family=Roboto+Condensed:ital,wght@1,700&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="formContainer">
+            <div class="logoContainer">
+                    <img src="data/logo.png" alt="Logo">
+                    <p>SIGNUP</p>
+            </div>
+            <form action="">
+                    <div class="input-container input-email-container">
+                        <img src="/loginPage/data/emailIcon.jpg" alt="EmailIcon">
+                        <input type="text" name="Email" placeholder="Email">
+                    </div>
+                    <div class="input-container input-password-container">
+                        <img src="/loginPage/data/passwordIcon.jpg" alt="PasswordIcon">
+                        <input type="password" name="Password" placeholder="Password">
+                    </div>
+                    <div class="input-container input-password-container">
+                        <img src="/loginPage/data/passwordIcon.jpg" alt="PasswordIcon">
+                        <input type="password" name="Password" placeholder="Repeat Password">
+                    </div>
+            </form>
+
+            <div class="buttonsContainer">
+                <button id="forgot">Troubles signin up?</button>
+                <button id="login">SIGN UP</button>
+            </div>
+        </section>
+
+    </body>
+</html>

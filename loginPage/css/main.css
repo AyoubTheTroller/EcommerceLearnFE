@@ -74,6 +74,10 @@ html {
   color: var(--clr-input-primary-1);
 }
 
+.signupForm {
+  display: none;
+}
+
 .logoContainer {
   flex-direction: column;
   justify-content: center;
@@ -205,17 +209,16 @@ p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.navBtn:focus {
+
+.navBtn.login-btn,
+.navBtn.signup-btn {
+  color: white;
+}
+
+.navBtn.login-btn.selected,
+.navBtn.signup-btn.selected {
   color: black;
   background-color: white;
-}
-
-.login-btn {
-  color: white;
-}
-
-.signup-btn {
-  color: white;
 }
 
 .container {
