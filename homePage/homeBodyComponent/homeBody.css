@@ -1,0 +1,58 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*FONT*/
+:root {
+  --clr-primary-1: #FE758B;
+  --clr-primary-2: #FF6067;
+  --clr-input-primary-1: #8DA5B0;
+  --clr-light-1: #FFF;
+  --clr-gradient-grey: #D3D3D3;
+  --clr-gradient-lightgrey: #F7F7F7;
+  --ff-primary: "Young Serif", serif;
+  --clr-primary-black: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.homeBodyContainer {
+  display: flex;
+  flex-direction: column;
+}
+.homeBodyContainer .welcomeSection {
+  display: flex;
+  flex-direction: row;
+}
+.homeBodyContainer .welcomeSection .welcomeContainer {
+  display: flex;
+  flex-direction: column;
+}
+.homeBodyContainer .categoriesSection {
+  display: flex;
+  flex-direction: row;
+}
+.homeBodyContainer .categoriesSection .categoryContainer {
+  display: flex;
+  flex-direction: column;
+}
+.homeBodyContainer .aboutUsSection {
+  display: flex;
+  flex-direction: row;
+}
+.homeBodyContainer .aboutUsSection .aboutUsContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=homeBody.css.map */

@@ -1,0 +1,64 @@
+<!--
+    Elements:
+        - div container (Flex column)
+            - section -> Welcome (Gallery Flex Row)
+                - img
+                - p
+            - section -> Categories (Flex row)
+                - h
+                - div
+                    - img (Category)
+                    - h (Category)
+                    - p (Category description)
+            - section -> About Us (Gallery Flex Row)
+                - h
+                - div
+                    - p
+                    - img
+-->
+
+<html>
+    <head>
+        <title>HomeBodyComponent</title>
+        <link rel="stylesheet" href="homeBody.css">
+    </head>
+    <body>
+        <div class="homeBodyContainer">
+            <div class="welcomeSection">
+                <div class="welcomeContainer">
+                    <img src="/homePage/data/WelcomeImage1.jpg" alt="Welcome Image">
+                    <p >...</p>
+                </div>
+                <div class="welcomeContainer">
+                    <img src="/homePage/data/WelcomeImage2.jpg" alt="Welcome Image">
+                    <p >...</p>
+                </div>
+            </div>
+            <div class="categoriesSection">
+                <h2 >Categories</h2>
+                <div class="categoryContainer">
+                    <img src="/homePage/data/fitness.jpg" alt="Category Image">
+                    <h3 >Category Name</h3>
+                    <p >Description here...</p>
+                </div>
+                <div class="categoryContainer">
+                    <img src="/homePage/data/food.jpg" alt="Category Image">
+                    <h3>Category Name</h3>
+                    <p>Description here...</p>
+                </div>
+            </div>
+            <div class="aboutUsSection">
+                <h2 >About Us</h2>
+                <div class="aboutUsContentContainer">
+                    <p >Description here...</p>
+                    <img src="/homePage/data/about_us_one.jpg" alt="About Us Image">
+                </div>
+                <div class="aboutUsContentContainer">
+                    <p>Description here...</p>
+                    <img src="/homePage/data/about_us_two.jpg" alt="About Us Image">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="homeBody.js"></script>
+</html>

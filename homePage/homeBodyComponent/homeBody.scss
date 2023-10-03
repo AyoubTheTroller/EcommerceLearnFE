@@ -1,0 +1,34 @@
+@import '../../css/base.scss';
+
+.homeBodyContainer{
+    display: flex;
+    flex-direction: column;
+    
+    .welcomeSection {
+        display: flex;
+        flex-direction: row;
+        .welcomeContainer{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .categoriesSection{
+        display: flex;
+        flex-direction: row;
+        .categoryContainer{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .aboutUsSection{
+        display: flex;
+        flex-direction: row;
+        .aboutUsContentContainer{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
