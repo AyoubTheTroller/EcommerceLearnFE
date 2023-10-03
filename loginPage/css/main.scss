@@ -126,12 +126,12 @@ p {
 		cursor: pointer;
 		border: none;
 	}
-	#forgot {
+	.btnProblems {
 		color: $color_3;
 		background-color: $background-color_1;
 		font-size: x-large;
 	}
-	#login {
+	.btnSubmit {
 		color: $color_4;
 		background-color: $background-color_2;
 		border-radius: 40px;

@@ -121,12 +121,12 @@ p {
   cursor: pointer;
   border: none;
 }
-.buttonsContainer #forgot {
+.buttonsContainer .btnProblems {
   color: var(--clr-primary-1);
   background-color: var(--clr-light-1);
   font-size: x-large;
 }
-.buttonsContainer #login {
+.buttonsContainer .btnSubmit {
   color: var(--clr-light-1);
   background-color: var(--clr-primary-2);
   border-radius: 40px;

@@ -14,3 +14,30 @@ function showSignupForm() {
 
 document.querySelector('.login-btn').addEventListener('click', showLoginForm);
 document.querySelector('.signup-btn').addEventListener('click', showSignupForm);
+
+
+// Form Data Handling
+
+function handleLogin() {
+    const formData = new FormData(document.getElementById('loginFormData'));
+
+    for (let pair of formData.entries()) {
+        console.log(pair[0] + ', ' + pair[1]);
+    }
+
+    // HERE REST CALL TO BACKEND
+}
+
+function handleSignup() {
+    const formData = new FormData(document.getElementById('signupFormData'));
+
+    for (let pair of formData.entries()) {
+        console.log(pair[0] + ', ' + pair[1]);
+    }
+
+    // HERE REST CALL TO BACKEND 
+
+}
+
+document.getElementById('login').addEventListener('click', handleLogin);
+document.getElementById('signup').addEventListener('click', handleSignup);
