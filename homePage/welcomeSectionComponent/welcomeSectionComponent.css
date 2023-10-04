@@ -1,0 +1,65 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*FONT*/
+:root {
+  --clr-primary-1: #FE758B;
+  --clr-primary-2: #FF6067;
+  --clr-input-primary-1: #8DA5B0;
+  --clr-light-1: #FFF;
+  --clr-gradient-grey: #D3D3D3;
+  --clr-gradient-lightgrey: #F7F7F7;
+  --ff-primary: "Young Serif", serif;
+  --clr-primary-black: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+.welcomeSection {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  height: 100%;
+}
+.welcomeSection .welcomeContainer {
+  flex: 0 0 75%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 0.5rem;
+}
+.welcomeSection .welcomeContainer img {
+  width: 100%;
+  padding-block: 1rem;
+}
+.welcomeSection .welcomeContainer p {
+  height: 20%;
+  padding-inline: auto;
+  padding-block: 1rem;
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .welcomeSection .welcomeContainer {
+    flex: 1 1;
+  }
+}
+
+/*# sourceMappingURL=welcomeSectionComponent.css.map */

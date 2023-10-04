@@ -1,0 +1,71 @@
+@import '../../css/base.scss';
+
+img {
+    display: block;
+}
+
+// USING ONLY DISPLAY FLEX (Problem with width, hard to make it responsive for smaller screens)
+.categoriesSection {
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem;
+    padding-inline: auto;
+    height: 100%;
+
+    h2 {
+        flex: 2;
+        text-align: center;
+    }
+
+    .split {
+        flex: 8;
+        display: flex;
+        flex-direction: row;
+        padding-block: 3rem;
+        padding-inline: 3rem;
+        gap: 3rem;
+
+        .categoryContainer {
+            display: flex;
+            flex: 1 0; // flex: 1 1 0
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+
+            .imageContainer {
+                width: 80%;
+                padding-top: 80%;
+                position: relative;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            h3 ,p {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    @media(max-width: 600px){
+    
+        .split {
+            flex-direction: column;
+            padding-inline: 2rem;
+        }
+
+        .split .categoryContainer .imageContainer {
+            padding-top: max(40%, 8rem); // When resizing down the 8rem then will win
+            width: max(40%, 8rem);
+        }
+    }
+}

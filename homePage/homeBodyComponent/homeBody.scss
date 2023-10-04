@@ -1,15 +1,54 @@
 @import '../../css/base.scss';
 
+img {
+    display: block;
+}
+
 .homeBodyContainer{
     display: flex;
     flex-direction: column;
-    
+    align-items: stretch;
+    overflow-y: auto;
+
     .welcomeSection {
+        flex-basis: 40vh;
         display: flex;
         flex-direction: row;
-        .welcomeContainer{
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        overflow-x: auto; 
+        width: 100%;
+        padding: 3rem;
+    
+        /*@media (max-height: 1000px) { 
+            flex-grow: 1;
+        }*/
+    
+        .welcomeContainer {
+            flex: 1 1;
+            padding: 5rem;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            
+            img {
+                width: 100%; 
+                padding-block: 2rem;
+            }
+        
+            p {
+                padding-inline: auto;
+                padding-block: 2rem;
+                font-size: small;
+                text-align: center;
+            }
+
+            @media (min-width: 1000px) { 
+                flex: 0 0 75%;
+            }
         }
     }
 

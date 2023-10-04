@@ -1,0 +1,87 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*FONT*/
+:root {
+  --clr-primary-1: #FE758B;
+  --clr-primary-2: #FF6067;
+  --clr-input-primary-1: #8DA5B0;
+  --clr-light-1: #FFF;
+  --clr-gradient-grey: #D3D3D3;
+  --clr-gradient-lightgrey: #F7F7F7;
+  --ff-primary: "Young Serif", serif;
+  --clr-primary-black: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+.categoriesSection {
+  display: flex;
+  flex-direction: column;
+  padding-block: 3rem;
+  padding-inline: auto;
+  height: 100%;
+}
+.categoriesSection h2 {
+  flex: 2;
+  text-align: center;
+}
+.categoriesSection .split {
+  flex: 8;
+  display: flex;
+  flex-direction: row;
+  padding-block: 3rem;
+  padding-inline: 3rem;
+  gap: 3rem;
+}
+.categoriesSection .split .categoryContainer {
+  display: flex;
+  flex: 1 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.categoriesSection .split .categoryContainer .imageContainer {
+  width: 80%;
+  padding-top: 80%;
+  position: relative;
+}
+.categoriesSection .split .categoryContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.categoriesSection .split .categoryContainer h3, .categoriesSection .split .categoryContainer p {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .categoriesSection .split {
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+  .categoriesSection .split .categoryContainer .imageContainer {
+    padding-top: max(40%, 10rem);
+    width: max(40%, 10rem);
+  }
+}
+
+/*# sourceMappingURL=categoriesSectionComponent.css.map */
