@@ -1,0 +1,60 @@
+@import '../../css/base.scss';
+
+img {
+    display: block;
+}
+
+.aboutUsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem; // OUTER PADDING
+    gap: 1rem; // INNER GAP BETWEEM ITEMS
+    height: 100%;
+
+    h2 {
+        text-wrap: nowrap;
+        flex: 2;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .split {
+        flex: 8;
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+        padding-block: 2rem;
+
+        .aboutUsContentContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            img{
+                width: 60%;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 600px){
+    
+    .aboutUsSection .split{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .aboutUsSection .split, img{
+        width: max(60%, 20rem);
+    }
+    
+}

@@ -1,0 +1,79 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*FONT*/
+:root {
+  --clr-primary-1: #FE758B;
+  --clr-primary-2: #FF6067;
+  --clr-input-primary-1: #8DA5B0;
+  --clr-light-1: #FFF;
+  --clr-gradient-grey: #D3D3D3;
+  --clr-gradient-lightgrey: #F7F7F7;
+  --ff-primary: "Young Serif", serif;
+  --clr-primary-black: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+.aboutUsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem;
+  gap: 1rem;
+  height: 100%;
+}
+.aboutUsSection h2 {
+  text-wrap: nowrap;
+  flex: 2;
+  text-align: center;
+  padding: 3rem;
+}
+.aboutUsSection .split {
+  flex: 8;
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  padding-block: 2rem;
+}
+.aboutUsSection .split .aboutUsContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.aboutUsSection .split .aboutUsContentContainer img {
+  width: 60%;
+}
+.aboutUsSection .split .aboutUsContentContainer p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .aboutUsSection .split {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .aboutUsSection .split, img {
+    width: max(60%, 20rem);
+  }
+}
+
+/*# sourceMappingURL=aboutUsSectionComponent.css.map */
