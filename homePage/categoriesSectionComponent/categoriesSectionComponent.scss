@@ -33,7 +33,7 @@ img {
             align-items: center;
             height: 100%;
 
-            .imageContainer {
+            .image-box {
                 width: 80%;
                 padding-top: 80%;
                 position: relative;
@@ -63,7 +63,7 @@ img {
             padding-inline: 2rem;
         }
 
-        .split .categoryContainer .imageContainer {
+        .split .categoryContainer .image-box {
             padding-top: max(40%, 8rem); // When resizing down the 8rem then will win
             width: max(40%, 8rem);
         }

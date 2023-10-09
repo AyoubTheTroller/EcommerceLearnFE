@@ -4,22 +4,21 @@
     background-color: var(--clr-input-primary-1);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 1.5rem;
     /*nav Buttons*/
     button{
         color: var(--clr-light-1);
         border: none;
-        font-size: 25px;
+        font-size: large;
         font-weight: bold;
-        margin-inline: 3rem;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
         white-space: nowrap;
         cursor: pointer;
         background: transparent;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-		width: 10em;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        padding-block: 1.5rem;
+        padding-inline: 3rem;
     }
     button.selected{
         color: var(--clr-primary-black);

@@ -57,7 +57,7 @@ img {
   align-items: center;
   height: 100%;
 }
-.categoriesSection .split .categoryContainer .imageContainer {
+.categoriesSection .split .categoryContainer .image-box {
   width: 80%;
   padding-top: 80%;
   position: relative;
@@ -78,7 +78,7 @@ img {
     flex-direction: column;
     padding-inline: 2rem;
   }
-  .categoriesSection .split .categoryContainer .imageContainer {
+  .categoriesSection .split .categoryContainer .image-box {
     padding-top: max(40%, 10rem);
     width: max(40%, 10rem);
   }
